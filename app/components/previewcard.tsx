@@ -14,7 +14,7 @@ export default function PreviewCard({
   );
 
   return (
-    <div className="flex flex-col p-5 border border-black w-[380px] bg-white rounded-2xl shadow-[9px_8px_0px_0px_black]">
+    <section className="flex flex-col p-5 border border-black w-[380px] bg-white rounded-2xl shadow-[9px_8px_0px_0px_black]">
       <div className="relative w-full h-[200px]">
         <Image
           src={article.illustration}
@@ -27,9 +27,9 @@ export default function PreviewCard({
       <div className="px-3 py-1 bg-yellow font-extrabold self-start text-sm rounded mt-6">
         {article.category}
       </div>
-      <div className="mt-3 text-sm">Published {publishedAtString}</div>
-      <div className="font-extrabold text-2xl mt-4">{article.title}</div>
-      <div className="mt-5 text-grey">{article.description}</div>
+      <p className="mt-3 text-sm">Published {publishedAtString}</p>
+      <h2 className="font-extrabold text-2xl mt-4">{article.title}</h2>
+      <p className="mt-5 text-grey">{article.description}</p>
 
       <div className="flex mt-6 items-center">
         <div className="w-8 h-8 relative">
@@ -38,6 +38,6 @@ export default function PreviewCard({
         <span className="text-sm font-extrabold ml-2">{article.author.name}</span>
 
       </div>
-    </div>
+    </section>
   );
 }

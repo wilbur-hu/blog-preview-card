@@ -21,7 +21,7 @@ export default function Home() {
       <main className="flex flex-col self-stretch grow items-center justify-center">
         <PreviewCard article={article} />
       </main>
-      <div className="attribution">
+      <footer className="attribution">
         Challenge by{" "}
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
           Frontend Mentor
@@ -31,7 +31,7 @@ export default function Home() {
           Wilbur Hu
         </a>
         .
-      </div>
+      </footer>
     </>
   );
 }
